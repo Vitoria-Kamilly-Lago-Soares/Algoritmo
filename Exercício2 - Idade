@@ -1,1 +1,22 @@
 
+programa
+{
+	funcao inicio ()
+	{
+		cadeia nome 		
+		inteiro idade, anonasc, anoatual
+		
+		escreva("Qual o seu nome? ")
+		leia(nome)
+		
+		escreva(nome + " ,em que ano estamos? ")
+		leia(anoatual)
+		
+		escreva(nome + " ,quando você nasceu? ")
+		leia(anonasc)
+		
+		idade = (anoatual - anonasc)
+		
+		escreva(nome + " você tem " + idade + " anos.")
+	}
+}
