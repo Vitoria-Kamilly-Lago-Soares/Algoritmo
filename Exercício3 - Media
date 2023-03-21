@@ -1,1 +1,30 @@
+programa {
+  funcao inicio() {
+    
+		cadeia nome
+		inteiro ativ, trab, prov, media 
+		
+		escreva("Informe seu nome: ")
+		leia(nome)
+		
+		escreva("Qual a nota da atividade? De 0 a 100. ")
+		leia(ativ)
+		
+		escreva("Qual a nota do trabalho? De 0 a 100. ")
+		leia(trab)
+		
+		escreva("Qual a nota da prova? De 0 a 100. ")
+		leia(prov)
 
+    se(ativ < 0 ou ativ > 100 e trab < 0 ou trab > 100 e prov < 0 ou prov> 100){
+
+      escreva("Alguma nota informada é menor que zero ou maior que cem, verifique.") 
+
+    }senao 
+    {
+		media = (ativ + trab + prov)/3
+		
+		escreva(nome + " sua média é: " + media)
+		}
+	}
+}
